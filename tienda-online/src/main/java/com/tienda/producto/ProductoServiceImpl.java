@@ -3,7 +3,6 @@ package com.tienda.producto;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class ProductoServiceImpl implements ProductoService {
 
     @PostConstruct
 
-    void loaed() {
+    public void load() {
         productos.add(new ProductoDto("TEC-01", "Teclado mecánico", "PERIFERICOS", new BigDecimal("89.99")));
         productos.add(new ProductoDto("RAT-01", "Ratón inalámbrico", "PERIFERICOS", new BigDecimal("25.50")));
         productos.add(new ProductoDto("MON-01", "Monitor 27 pulgadas", "PANTALLAS", new BigDecimal("299.00")));
